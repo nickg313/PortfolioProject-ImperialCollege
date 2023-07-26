@@ -26,6 +26,6 @@ The 3rd hyperparameter was the type of kernel used, ie) 'linear' or 'radial'.
 
 ## RESULTS
 
-The SVM F1 score was significantly better than that of the Naive Bayes classifier. However, after some tuning, the Naive Bayes classifier also demonstrated satisfactory performance, bring both models with hyperparameter tuning close to equal, although SVM remained the superior choice.
+The SVM F1 score was significantly better than that of the Naive Bayes classifier before tuning. However, after some tuning, the Naive Bayes classifier also demonstrated satisfactory performance, bringing it's f1 score up to 0.69. However, the f1 score of the SVM dropped for some reason due to tuning, which I attribute to bias and inaccuracy in my sampling methods.
 
 However, I must stress the potential bias/inaccuracy that may be present, since I had to resample the original dataframe and make it smaller in order to be able to perform hyperparameter tuning for the SVM model. 
